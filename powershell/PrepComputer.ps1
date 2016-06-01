@@ -17,8 +17,8 @@ mkdir C:\Temp
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
 #enable administrator account
-$Admin-Pass = Read-Host -Prompt 'Please enter the local admin password'
-net user administrator $Admin-Pass
+$AdminPass = Read-Host -Prompt 'Please enter the local admin password'
+net user administrator $AdminPass
 net user administrator /active
 
 #set mystify screensaver

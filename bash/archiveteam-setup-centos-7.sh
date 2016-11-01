@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Example usage:
+# tmux new -s panoramio1
 # run-pipeline pipeline.py  --concurrent 20 --disable-web-server lain
 
 yum update -y

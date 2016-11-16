@@ -5,11 +5,12 @@
 # prep
 mkdir temp
 cd temp
-sudo pacman -S git expac --noconfirm
+sudo pacman -S git expac base-devel --noconfirm
 
-# install cower (without pgp check)
+# install cower
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
-makepkg PKGBUILD --skippgpcheck
+makepkg PKGBUILD
 sudo pacman -U cower*.tar --noconfirm
 
 # install pacaur

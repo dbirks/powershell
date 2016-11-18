@@ -10,13 +10,11 @@ sudo pacman -S git expac base-devel --noconfirm
 # install cower
 gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
-makepkg PKGBUILD
-sudo pacman -U cower*.tar --noconfirm
+makepkg -i PKGBUILD --noconfirm
 
 # install pacaur
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
-makepkg PKGBUILD
-sudo pacman -U pacaur*.tar --noconfirm
+makepkg -i PKGBUILD --noconfirm
 
 # cleanup
 cd ..

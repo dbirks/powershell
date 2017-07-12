@@ -5,7 +5,7 @@
 # prep
 mkdir temp
 cd temp
-sudo pacman -S git expac base-devel --noconfirm
+sudo pacman -S git expac base-devel yajl --noconfirm
 
 # install cower
 gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53

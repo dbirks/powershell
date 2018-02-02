@@ -8,7 +8,8 @@ cd temp
 sudo pacman -S git expac base-devel yajl --noconfirm
 
 # install cower
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+
+gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 487EACC08557AD082088DABA1EB2638FF56C0C53
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
 makepkg -i PKGBUILD --noconfirm
 
